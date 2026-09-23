@@ -3,19 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Personal portfolio of Đinh Nhật Bảo Nhi - Web Development Student"
+    >
 
     <title>Đinh Nhật Bảo Nhi | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
 
-<!-- ================= NAVBAR ================= -->
+<!-- =========================
+     HEADER / NAVBAR
+========================= -->
 
-<header>
+<header class="header" id="header">
 
     <nav class="navbar">
 
@@ -23,20 +35,61 @@
             BN<span>.</span>
         </a>
 
-        <div class="nav-links">
 
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#journey">Journey</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+        <div class="nav-menu" id="navMenu">
+
+            <a href="#home" class="nav-link active">
+                Home
+            </a>
+
+            <a href="#about" class="nav-link">
+                About
+            </a>
+
+            <a href="#skills" class="nav-link">
+                Skills
+            </a>
+
+            <a href="#journey" class="nav-link">
+                Journey
+            </a>
+
+            <a href="#projects" class="nav-link">
+                Projects
+            </a>
+
+            <a href="#contact" class="nav-link">
+                Contact
+            </a>
 
         </div>
 
-        <a href="#contact" class="nav-button">
-            Let's Talk
-        </a>
+
+        <div class="nav-actions">
+
+            <button
+                class="theme-button"
+                id="themeButton"
+                aria-label="Change theme"
+            >
+                🌙
+            </button>
+
+
+            <a href="#contact" class="nav-contact">
+                Let's Talk
+            </a>
+
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
 
     </nav>
 
@@ -44,49 +97,69 @@
 
 
 
-<!-- ================= HERO ================= -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero" id="home">
 
-    <div class="hero-content">
+    <div class="hero-container">
 
-        <div class="hero-text">
 
-            <span class="hero-badge">
-                👋 Welcome to my portfolio
-            </span>
+        <div class="hero-text reveal">
 
-            <p class="small-title">
+            <div class="hero-badge">
+                <span class="status-dot"></span>
+                Available for learning & projects
+            </div>
+
+
+            <p class="hero-small">
                 WEB DEVELOPMENT STUDENT
             </p>
 
+
             <h1>
-                Hi, I'm <span>Đinh Nhật Bảo Nhi</span>
+                Hi, I'm
+                <span>Đinh Nhật Bảo Nhi</span>
             </h1>
 
+
             <h2>
-                Learning to build modern websites.
+                I build
+                <span id="typingText">
+                    modern websites.
+                </span>
             </h2>
+
 
             <p class="hero-description">
 
-                I'm a student exploring web development,
-                database systems and modern technology.
+                I'm a student passionate about web development,
+                information systems and database technologies.
 
-                This portfolio represents my learning journey
-                and the projects I create along the way.
+                I enjoy turning ideas into clean,
+                responsive and useful digital experiences.
 
             </p>
 
 
             <div class="hero-buttons">
 
-                <a href="#projects" class="primary-button">
-                    View My Projects →
+                <a
+                    href="#projects"
+                    class="button primary-button"
+                >
+                    View My Projects
+                    <span>→</span>
                 </a>
 
-                <a href="#about" class="secondary-button">
-                    About Me
+
+                <a
+                    href="#about"
+                    class="button secondary-button"
+                >
+                    More About Me
                 </a>
 
             </div>
@@ -94,10 +167,21 @@
 
             <div class="hero-social">
 
-                <span>Follow me:</span>
+                <span>
+                    Find me online
+                </span>
 
-                <a href="#">GitHub</a>
-                <a href="#">LinkedIn</a>
+                <a href="#" aria-label="GitHub">
+                    GitHub
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    LinkedIn
+                </a>
+
+                <a href="#" aria-label="Email">
+                    Email
+                </a>
 
             </div>
 
@@ -105,37 +189,134 @@
 
 
 
-        <div class="hero-image">
+        <div class="hero-visual reveal">
 
-            <div class="image-background">
+            <div class="hero-blob"></div>
 
-                <div class="profile-card">
 
-                    <div class="profile-icon">
+            <div class="profile-main-card">
+
+                <div class="profile-top">
+
+                    <div class="profile-avatar">
                         👩‍💻
                     </div>
 
-                    <h3>
-                        Đinh Nhật Bảo Nhi
-                    </h3>
+                    <div>
 
-                    <p>
-                        Web Development Student
-                    </p>
+                        <h3>
+                            Đinh Nhật Bảo Nhi
+                        </h3>
 
-
-                    <div class="profile-tags">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Database</span>
+                        <p>
+                            Web Development Student
+                        </p>
 
                     </div>
 
                 </div>
 
+
+                <div class="code-window">
+
+                    <div class="code-window-top">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="code-content">
+
+                        <p>
+                            <span class="code-purple">const</span>
+                            student =
+                            <span class="code-yellow">{</span>
+                        </p>
+
+                        <p>
+                            &nbsp;&nbsp;name:
+                            <span class="code-green">
+                                "Bao Nhi"
+                            </span>,
+                        </p>
+
+                        <p>
+                            &nbsp;&nbsp;role:
+                            <span class="code-green">
+                                "Developer"
+                            </span>,
+                        </p>
+
+                        <p>
+                            &nbsp;&nbsp;learning:
+                            <span class="code-green">
+                                true
+                            </span>
+                        </p>
+
+                        <p>
+                            <span class="code-yellow">}</span>;
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Database</span>
+
+                </div>
+
             </div>
 
+
+            <div class="floating-card floating-one">
+
+                <strong>
+                    01
+                </strong>
+
+                <span>
+                    Live Website
+                </span>
+
+            </div>
+
+
+            <div class="floating-card floating-two">
+
+                <strong>
+                    100%
+                </strong>
+
+                <span>
+                    Motivation
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="scroll-indicator">
+
+        <span>
+            Scroll Down
+        </span>
+
+        <div class="mouse">
+            <div></div>
         </div>
 
     </div>
@@ -144,11 +325,113 @@
 
 
 
-<!-- ================= ABOUT ================= -->
+<!-- =========================
+     STATS
+========================= -->
 
-<section class="about" id="about">
+<section class="stats-section">
 
-    <div class="section-title">
+    <div class="stats-container reveal">
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                💻
+            </div>
+
+            <h3
+                class="counter"
+                data-target="6"
+                data-suffix="+"
+            >
+                0
+            </h3>
+
+            <p>
+                Technologies
+            </p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🚀
+            </div>
+
+            <h3
+                class="counter"
+                data-target="6"
+                data-suffix="+"
+            >
+                0
+            </h3>
+
+            <p>
+                Projects
+            </p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ⏱️
+            </div>
+
+            <h3
+                class="counter"
+                data-target="100"
+                data-suffix="+"
+            >
+                0
+            </h3>
+
+            <p>
+                Learning Hours
+            </p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🌐
+            </div>
+
+            <h3
+                class="counter"
+                data-target="1"
+                data-suffix=""
+            >
+                0
+            </h3>
+
+            <p>
+                Live Website
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section about" id="about">
+
+
+    <div class="section-heading reveal">
 
         <span>
             ABOUT ME
@@ -159,38 +442,83 @@
         </h2>
 
         <p>
-            A little introduction about who I am and
-            what I'm currently learning.
+            A little more about who I am,
+            what I enjoy and what I am working toward.
         </p>
 
     </div>
 
 
 
-    <div class="about-content">
+    <div class="about-container">
 
 
-        <div class="about-left">
+        <div class="about-visual reveal">
 
-            <div class="about-image">
+            <div class="browser-window">
 
-                <div class="about-code">
+                <div class="browser-top">
 
-                    <span>&lt;html&gt;</span>
+                    <div class="browser-dots">
 
-                    <span>
-                        &nbsp;&nbsp;&lt;body&gt;
-                    </span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
 
-                    <span>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Hello World!
-                    </span>
+                    </div>
 
-                    <span>
-                        &nbsp;&nbsp;&lt;/body&gt;
-                    </span>
+                    <div class="browser-address">
+                        portfolio.com/about
+                    </div>
 
-                    <span>&lt;/html&gt;</span>
+                </div>
+
+
+                <div class="browser-body">
+
+                    <p class="browser-comment">
+                        // About me
+                    </p>
+
+                    <p>
+
+                        <span class="code-purple">
+                            function
+                        </span>
+
+                        <span class="code-blue">
+                            introduceMe
+                        </span>()
+
+                        <span class="code-yellow">
+                            {
+                        </span>
+
+                    </p>
+
+
+                    <p>
+
+                        &nbsp;&nbsp;
+
+                        <span class="code-purple">
+                            return
+                        </span>
+
+                        <span class="code-green">
+                            "Student who loves technology";
+                        </span>
+
+                    </p>
+
+
+                    <p>
+
+                        <span class="code-yellow">
+                            }
+                        </span>
+
+                    </p>
 
                 </div>
 
@@ -200,38 +528,40 @@
 
 
 
-        <div class="about-right">
+        <div class="about-content reveal">
 
-            <p class="about-heading">
+
+            <p class="about-title">
                 Building my future one line of code at a time.
             </p>
 
+
             <p>
 
-                I am currently learning the fundamentals of
-                web development and information systems.
-
-                My goal is to understand how modern websites
-                work from both the front-end and database side.
+                I am currently studying information systems and
+                learning how websites and digital systems are
+                designed, developed and deployed.
 
             </p>
 
 
             <p>
 
-                During my learning journey, I have been working
-                with HTML, CSS, Git, GitHub and database technologies
-                such as MySQL and MongoDB.
+                I enjoy combining technical skills with
+                creative design. My current focus is front-end
+                development, responsive interfaces and databases.
 
             </p>
 
 
+            <div class="about-information">
 
-            <div class="about-info">
 
-                <div>
+                <div class="info-item">
 
-                    <span>Name</span>
+                    <span>
+                        Name
+                    </span>
 
                     <strong>
                         Đinh Nhật Bảo Nhi
@@ -240,9 +570,11 @@
                 </div>
 
 
-                <div>
+                <div class="info-item">
 
-                    <span>Role</span>
+                    <span>
+                        Role
+                    </span>
 
                     <strong>
                         Student
@@ -251,9 +583,11 @@
                 </div>
 
 
-                <div>
+                <div class="info-item">
 
-                    <span>Focus</span>
+                    <span>
+                        Focus
+                    </span>
 
                     <strong>
                         Web Development
@@ -262,13 +596,38 @@
                 </div>
 
 
-                <div>
+                <div class="info-item">
 
-                    <span>Location</span>
+                    <span>
+                        Location
+                    </span>
 
                     <strong>
                         Vietnam
                     </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="about-goal">
+
+                <div>
+                    🎯
+                </div>
+
+                <div>
+
+                    <span>
+                        Current Goal
+                    </span>
+
+                    <p>
+                        Improve JavaScript skills and build
+                        more complete interactive websites.
+                    </p>
 
                 </div>
 
@@ -277,123 +636,47 @@
 
         </div>
 
-    </div>
-
-
-
-    <!-- ================= STATISTICS ================= -->
-
-    <div class="stats">
-
-
-        <div class="stat-card">
-
-            <div class="stat-icon">
-                💻
-            </div>
-
-            <h3>
-                4+
-            </h3>
-
-            <p>
-                Technologies
-            </p>
-
-        </div>
-
-
-
-        <div class="stat-card">
-
-            <div class="stat-icon">
-                🚀
-            </div>
-
-            <h3>
-                3+
-            </h3>
-
-            <p>
-                Projects
-            </p>
-
-        </div>
-
-
-
-        <div class="stat-card">
-
-            <div class="stat-icon">
-                📚
-            </div>
-
-            <h3>
-                1+
-            </h3>
-
-            <p>
-                Learning Journey
-            </p>
-
-        </div>
-
-
-
-        <div class="stat-card">
-
-            <div class="stat-icon">
-                🔥
-            </div>
-
-            <h3>
-                100%
-            </h3>
-
-            <p>
-                Motivation
-            </p>
-
-        </div>
-
 
     </div>
+
 
 </section>
 
 
 
-<!-- ================= SKILLS ================= -->
+<!-- =========================
+     SKILLS
+========================= -->
 
-<section class="skills" id="skills">
+<section class="section skills" id="skills">
 
 
-    <div class="section-title">
+    <div class="section-heading reveal">
 
         <span>
             MY SKILLS
         </span>
 
         <h2>
-            Technologies I'm Learning
+            Technologies I'm learning
         </h2>
 
         <p>
-            Tools and technologies that I have been
-            practicing during my studies.
+            A combination of front-end,
+            development tools and database technologies.
         </p>
 
     </div>
 
 
 
-    <div class="skill-container">
+    <div class="skills-layout">
 
 
-        <div class="skill-cards">
+        <div class="skill-grid reveal">
 
 
-            <div class="skill-card">
+            <div class="skill-box">
 
                 <div class="skill-icon">
                     🌐
@@ -404,15 +687,13 @@
                 </h3>
 
                 <p>
-                    Building semantic and structured
-                    web pages.
+                    Semantic structure and accessible web pages.
                 </p>
 
             </div>
 
 
-
-            <div class="skill-card">
+            <div class="skill-box">
 
                 <div class="skill-icon">
                     🎨
@@ -423,15 +704,30 @@
                 </h3>
 
                 <p>
-                    Creating responsive layouts and
-                    modern user interfaces.
+                    Responsive layouts, animations and design.
                 </p>
 
             </div>
 
 
+            <div class="skill-box">
 
-            <div class="skill-card">
+                <div class="skill-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    JavaScript
+                </h3>
+
+                <p>
+                    Basic interaction and dynamic web behavior.
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
 
                 <div class="skill-icon">
                     🐙
@@ -442,27 +738,41 @@
                 </h3>
 
                 <p>
-                    Managing source code and
-                    project versions.
+                    Version control and source code management.
                 </p>
 
             </div>
 
 
-
-            <div class="skill-card">
+            <div class="skill-box">
 
                 <div class="skill-icon">
                     🗄️
                 </div>
 
                 <h3>
-                    Database
+                    MySQL
                 </h3>
 
                 <p>
-                    Exploring MySQL and MongoDB
-                    database concepts.
+                    Relational database fundamentals.
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <div class="skill-icon">
+                    🍃
+                </div>
+
+                <h3>
+                    MongoDB
+                </h3>
+
+                <p>
+                    Exploring NoSQL data storage concepts.
                 </p>
 
             </div>
@@ -472,34 +782,42 @@
 
 
 
-        <!-- ================= PROGRESS ================= -->
+        <div class="progress-panel reveal">
 
-        <div class="skill-progress">
+            <div class="panel-heading">
+
+                <span>
+                    CURRENT LEVEL
+                </span>
+
+                <h3>
+                    Learning Progress
+                </h3>
+
+            </div>
 
 
-            <h3 class="progress-heading">
-                My Current Progress
-            </h3>
 
+            <div class="progress-item">
 
-
-            <div class="skill">
-
-                <div class="skill-title">
+                <div class="progress-info">
 
                     <span>
                         HTML
                     </span>
 
                     <span>
-                        85%
+                        90%
                     </span>
 
                 </div>
 
-                <div class="progress">
+                <div class="progress-track">
 
-                    <div class="progress-bar html"></div>
+                    <div
+                        class="progress-fill"
+                        data-width="90"
+                    ></div>
 
                 </div>
 
@@ -507,12 +825,39 @@
 
 
 
-            <div class="skill">
+            <div class="progress-item">
 
-                <div class="skill-title">
+                <div class="progress-info">
 
                     <span>
                         CSS
+                    </span>
+
+                    <span>
+                        82%
+                    </span>
+
+                </div>
+
+                <div class="progress-track">
+
+                    <div
+                        class="progress-fill"
+                        data-width="82"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="progress-item">
+
+                <div class="progress-info">
+
+                    <span>
+                        Git & GitHub
                     </span>
 
                     <span>
@@ -521,33 +866,12 @@
 
                 </div>
 
-                <div class="progress">
+                <div class="progress-track">
 
-                    <div class="progress-bar css"></div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="skill">
-
-                <div class="skill-title">
-
-                    <span>
-                        Git & GitHub
-                    </span>
-
-                    <span>
-                        65%
-                    </span>
-
-                </div>
-
-                <div class="progress">
-
-                    <div class="progress-bar git"></div>
+                    <div
+                        class="progress-fill"
+                        data-width="75"
+                    ></div>
 
                 </div>
 
@@ -555,12 +879,66 @@
 
 
 
-            <div class="skill">
+            <div class="progress-item">
 
-                <div class="skill-title">
+                <div class="progress-info">
 
                     <span>
-                        Database
+                        MySQL
+                    </span>
+
+                    <span>
+                        70%
+                    </span>
+
+                </div>
+
+                <div class="progress-track">
+
+                    <div
+                        class="progress-fill"
+                        data-width="70"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="progress-item">
+
+                <div class="progress-info">
+
+                    <span>
+                        JavaScript
+                    </span>
+
+                    <span>
+                        55%
+                    </span>
+
+                </div>
+
+                <div class="progress-track">
+
+                    <div
+                        class="progress-fill"
+                        data-width="55"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="progress-item">
+
+                <div class="progress-info">
+
+                    <span>
+                        MongoDB
                     </span>
 
                     <span>
@@ -569,9 +947,12 @@
 
                 </div>
 
-                <div class="progress">
+                <div class="progress-track">
 
-                    <div class="progress-bar database"></div>
+                    <div
+                        class="progress-fill"
+                        data-width="60"
+                    ></div>
 
                 </div>
 
@@ -588,24 +969,169 @@
 
 
 
-<!-- ================= JOURNEY ================= -->
+<!-- =========================
+     SERVICES
+========================= -->
 
-<section class="journey" id="journey">
+<section class="section services">
 
 
-    <div class="section-title">
+    <div class="section-heading reveal">
+
+        <span>
+            WHAT I CAN DO
+        </span>
+
+        <h2>
+            Areas I'm developing
+        </h2>
+
+        <p>
+            Skills I am currently practicing
+            through exercises and personal projects.
+        </p>
+
+    </div>
+
+
+
+    <div class="service-grid">
+
+
+        <article class="service-card reveal">
+
+            <span class="service-number">
+                01
+            </span>
+
+            <div class="service-icon">
+                🖥️
+            </div>
+
+            <h3>
+                Web Design
+            </h3>
+
+            <p>
+                Creating clean and modern website
+                layouts using HTML and CSS.
+            </p>
+
+            <a href="#projects">
+                Explore Work →
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card reveal">
+
+            <span class="service-number">
+                02
+            </span>
+
+            <div class="service-icon">
+                📱
+            </div>
+
+            <h3>
+                Responsive Design
+            </h3>
+
+            <p>
+                Building layouts that adapt to
+                desktop, tablet and mobile screens.
+            </p>
+
+            <a href="#projects">
+                Explore Work →
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card reveal">
+
+            <span class="service-number">
+                03
+            </span>
+
+            <div class="service-icon">
+                🗃️
+            </div>
+
+            <h3>
+                Database Basics
+            </h3>
+
+            <p>
+                Designing and working with structured
+                information using database technologies.
+            </p>
+
+            <a href="#projects">
+                Explore Work →
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card reveal">
+
+            <span class="service-number">
+                04
+            </span>
+
+            <div class="service-icon">
+                🚀
+            </div>
+
+            <h3>
+                Web Deployment
+            </h3>
+
+            <p>
+                Publishing static web projects
+                online using GitHub and Vercel.
+            </p>
+
+            <a href="#projects">
+                Explore Work →
+            </a>
+
+        </article>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     JOURNEY
+========================= -->
+
+<section class="section journey" id="journey">
+
+
+    <div class="section-heading reveal">
 
         <span>
             MY JOURNEY
         </span>
 
         <h2>
-            Learning Web Development
+            Learning timeline
         </h2>
 
         <p>
-            My progress during the first steps
-            of becoming a web developer.
+            My progress from the first HTML page
+            to building interactive websites.
         </p>
 
     </div>
@@ -615,30 +1141,35 @@
     <div class="timeline">
 
 
-        <div class="timeline-item">
+        <div class="timeline-line"></div>
 
-            <div class="timeline-number">
+
+
+        <div class="timeline-item reveal">
+
+            <div class="timeline-point">
                 01
             </div>
 
+            <div class="timeline-card">
 
-            <div class="timeline-content">
-
-                <span>
+                <span class="timeline-label">
                     STEP ONE
                 </span>
 
                 <h3>
-                    Learn HTML
+                    HTML Fundamentals
                 </h3>
 
                 <p>
-
-                    Started learning how websites are
-                    structured using headings, paragraphs,
-                    links, images, sections and semantic HTML.
-
+                    Learned page structure, semantic elements,
+                    images, links, tables, forms and sections.
                 </p>
+
+                <div class="timeline-tags">
+                    <span>HTML</span>
+                    <span>Structure</span>
+                </div>
 
             </div>
 
@@ -646,30 +1177,31 @@
 
 
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
 
-            <div class="timeline-number">
+            <div class="timeline-point">
                 02
             </div>
 
+            <div class="timeline-card">
 
-            <div class="timeline-content">
-
-                <span>
+                <span class="timeline-label">
                     STEP TWO
                 </span>
 
                 <h3>
-                    Learn CSS
+                    CSS & Responsive Design
                 </h3>
 
                 <p>
-
-                    Learned how to create layouts using
-                    Flexbox, Grid, colors, typography,
-                    hover effects and responsive design.
-
+                    Practiced Flexbox, Grid, responsive
+                    breakpoints, colors and user interface design.
                 </p>
+
+                <div class="timeline-tags">
+                    <span>CSS</span>
+                    <span>Responsive</span>
+                </div>
 
             </div>
 
@@ -677,16 +1209,15 @@
 
 
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
 
-            <div class="timeline-number">
+            <div class="timeline-point">
                 03
             </div>
 
+            <div class="timeline-card">
 
-            <div class="timeline-content">
-
-                <span>
+                <span class="timeline-label">
                     STEP THREE
                 </span>
 
@@ -695,12 +1226,14 @@
                 </h3>
 
                 <p>
-
-                    Started managing project versions,
-                    repositories and publishing source
-                    code using GitHub.
-
+                    Learned how to manage source code,
+                    commit changes and push projects online.
                 </p>
+
+                <div class="timeline-tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                </div>
 
             </div>
 
@@ -708,17 +1241,48 @@
 
 
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
 
-            <div class="timeline-number">
+            <div class="timeline-point">
                 04
             </div>
 
+            <div class="timeline-card">
 
-            <div class="timeline-content">
-
-                <span>
+                <span class="timeline-label">
                     STEP FOUR
+                </span>
+
+                <h3>
+                    Database Fundamentals
+                </h3>
+
+                <p>
+                    Started learning relational and
+                    non-relational database concepts.
+                </p>
+
+                <div class="timeline-tags">
+                    <span>MySQL</span>
+                    <span>MongoDB</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="timeline-item reveal">
+
+            <div class="timeline-point">
+                05
+            </div>
+
+            <div class="timeline-card">
+
+                <span class="timeline-label">
+                    STEP FIVE
                 </span>
 
                 <h3>
@@ -726,12 +1290,46 @@
                 </h3>
 
                 <p>
-
-                    Learned how to deploy a website
-                    online so other people can access
-                    the project through the Internet.
-
+                    Published my projects online and
+                    learned the basic deployment workflow.
                 </p>
+
+                <div class="timeline-tags">
+                    <span>Vercel</span>
+                    <span>Deployment</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="timeline-item reveal">
+
+            <div class="timeline-point">
+                06
+            </div>
+
+            <div class="timeline-card">
+
+                <span class="timeline-label">
+                    CURRENT STEP
+                </span>
+
+                <h3>
+                    JavaScript
+                </h3>
+
+                <p>
+                    Adding interactions, dynamic components
+                    and behavior to web pages.
+                </p>
+
+                <div class="timeline-tags">
+                    <span>JavaScript</span>
+                    <span>DOM</span>
+                </div>
 
             </div>
 
@@ -745,25 +1343,54 @@
 
 
 
-<!-- ================= PROJECTS ================= -->
+<!-- =========================
+     PROJECTS
+========================= -->
 
-<section class="projects" id="projects">
+<section class="section projects" id="projects">
 
 
-    <div class="section-title">
+    <div class="section-heading reveal">
 
         <span>
-            MY WORK
+            MY PROJECTS
         </span>
 
         <h2>
-            Featured Projects
+            Featured work
         </h2>
 
         <p>
-            Some projects created during
-            my learning journey.
+            Projects and exercises created
+            during my learning journey.
         </p>
+
+    </div>
+
+
+
+    <div class="project-filter reveal">
+
+        <button
+            class="filter-button active"
+            data-filter="all"
+        >
+            All
+        </button>
+
+        <button
+            class="filter-button"
+            data-filter="web"
+        >
+            Web
+        </button>
+
+        <button
+            class="filter-button"
+            data-filter="database"
+        >
+            Database
+        </button>
 
     </div>
 
@@ -772,173 +1399,417 @@
     <div class="project-grid">
 
 
-        <!-- PROJECT 1 -->
+        <article
+            class="project-card reveal"
+            data-category="web"
+        >
 
-        <div class="project-card">
+            <div class="project-preview preview-one">
 
+                <div class="preview-browser">
 
-            <div class="project-number">
-                01
-            </div>
+                    <div class="mini-browser-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
 
+                    <div class="mini-layout">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
 
-            <div class="project-icon">
-                💻
-            </div>
-
-
-            <h3>
-                Personal Portfolio
-            </h3>
-
-
-            <p>
-
-                A responsive personal portfolio
-                created using HTML and CSS.
-
-                The website introduces my skills,
-                projects and learning journey.
-
-            </p>
-
-
-
-            <div class="project-tags">
-
-                <span>
-                    HTML
-                </span>
-
-                <span>
-                    CSS
-                </span>
-
-                <span>
-                    Vercel
-                </span>
+                </div>
 
             </div>
 
 
-            <a href="#" class="project-link">
-                View Project →
-            </a>
+            <div class="project-content">
+
+                <div class="project-top">
+
+                    <span>
+                        WEB PROJECT
+                    </span>
+
+                    <strong>
+                        01
+                    </strong>
+
+                </div>
 
 
-        </div>
+                <h3>
+                    Personal Portfolio
+                </h3>
+
+                <p>
+                    A responsive personal portfolio featuring
+                    sections, projects, skills and animations.
+                </p>
 
 
+                <div class="project-tags">
 
-        <!-- PROJECT 2 -->
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
 
-        <div class="project-card">
-
-
-            <div class="project-number">
-                02
-            </div>
+                </div>
 
 
-            <div class="project-icon">
-                🚀
-            </div>
-
-
-            <h3>
-                Landing Page
-            </h3>
-
-
-            <p>
-
-                A modern landing page focused
-                on clean interface design,
-                sections and responsive layouts.
-
-            </p>
-
-
-
-            <div class="project-tags">
-
-                <span>
-                    HTML
-                </span>
-
-                <span>
-                    CSS
-                </span>
-
-                <span>
-                    Responsive
-                </span>
+                <a href="#">
+                    View Project →
+                </a>
 
             </div>
 
-
-            <a href="#" class="project-link">
-                Coming Soon →
-            </a>
-
-
-        </div>
+        </article>
 
 
 
-        <!-- PROJECT 3 -->
+        <article
+            class="project-card reveal"
+            data-category="web"
+        >
 
-        <div class="project-card">
+            <div class="project-preview preview-two">
 
+                <div class="landing-preview">
 
-            <div class="project-number">
-                03
-            </div>
+                    <div class="landing-left">
 
+                        <div></div>
+                        <div></div>
+                        <div></div>
 
-            <div class="project-icon">
-                🗄️
-            </div>
+                    </div>
 
+                    <div class="landing-right">
+                        🚀
+                    </div>
 
-            <h3>
-                Database Project
-            </h3>
-
-
-            <p>
-
-                A project created to explore
-                database concepts including
-                storing, organizing and managing data.
-
-            </p>
-
-
-
-            <div class="project-tags">
-
-                <span>
-                    MySQL
-                </span>
-
-                <span>
-                    MongoDB
-                </span>
-
-                <span>
-                    Database
-                </span>
+                </div>
 
             </div>
 
 
-            <a href="#" class="project-link">
-                Coming Soon →
-            </a>
+            <div class="project-content">
+
+                <div class="project-top">
+
+                    <span>
+                        WEB PROJECT
+                    </span>
+
+                    <strong>
+                        02
+                    </strong>
+
+                </div>
 
 
-        </div>
+                <h3>
+                    Modern Landing Page
+                </h3>
+
+                <p>
+                    A clean landing page focused on
+                    responsive design and visual hierarchy.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+
+                </div>
+
+
+                <a href="#">
+                    View Project →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="project-card reveal"
+            data-category="database"
+        >
+
+            <div class="project-preview preview-three">
+
+                <div class="database-preview">
+
+                    <div>🗄️</div>
+
+                    <div class="database-lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <div class="project-top">
+
+                    <span>
+                        DATABASE
+                    </span>
+
+                    <strong>
+                        03
+                    </strong>
+
+                </div>
+
+
+                <h3>
+                    Student Database
+                </h3>
+
+                <p>
+                    A database exercise for storing
+                    and organizing student information.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>MySQL</span>
+                    <span>Database</span>
+
+                </div>
+
+
+                <a href="#">
+                    View Project →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="project-card reveal"
+            data-category="web"
+        >
+
+            <div class="project-preview preview-four">
+
+                <div class="product-preview">
+
+                    <div class="product-image">
+                        🎧
+                    </div>
+
+                    <div class="product-info">
+
+                        <span></span>
+                        <span></span>
+
+                        <button>
+                            Buy
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <div class="project-top">
+
+                    <span>
+                        WEB PROJECT
+                    </span>
+
+                    <strong>
+                        04
+                    </strong>
+
+                </div>
+
+
+                <h3>
+                    Product Page
+                </h3>
+
+                <p>
+                    A responsive product page with
+                    modern card layouts and interaction.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+
+                </div>
+
+
+                <a href="#">
+                    View Project →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="project-card reveal"
+            data-category="database"
+        >
+
+            <div class="project-preview preview-five">
+
+                <div class="diagram">
+
+                    <div>
+                        USER
+                    </div>
+
+                    <span></span>
+
+                    <div>
+                        ORDER
+                    </div>
+
+                    <span></span>
+
+                    <div>
+                        PRODUCT
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <div class="project-top">
+
+                    <span>
+                        DATABASE
+                    </span>
+
+                    <strong>
+                        05
+                    </strong>
+
+                </div>
+
+
+                <h3>
+                    Database Design
+                </h3>
+
+                <p>
+                    Exploring entities, relationships
+                    and basic database organization.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>MySQL</span>
+                    <span>ERD</span>
+
+                </div>
+
+
+                <a href="#">
+                    View Project →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="project-card reveal"
+            data-category="web"
+        >
+
+            <div class="project-preview preview-six">
+
+                <div class="coming-preview">
+
+                    <span>
+                        &lt;/&gt;
+                    </span>
+
+                    <p>
+                        NEXT PROJECT
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <div class="project-top">
+
+                    <span>
+                        COMING SOON
+                    </span>
+
+                    <strong>
+                        06
+                    </strong>
+
+                </div>
+
+
+                <h3>
+                    JavaScript Application
+                </h3>
+
+                <p>
+                    My next project will use JavaScript
+                    to create more interactive experiences.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>JavaScript</span>
+                    <span>Future</span>
+
+                </div>
+
+
+                <a href="#contact">
+                    Coming Soon →
+                </a>
+
+            </div>
+
+        </article>
 
 
     </div>
@@ -948,86 +1819,124 @@
 
 
 
-<!-- ================= LEARNING NOW ================= -->
+<!-- =========================
+     LEARNING
+========================= -->
 
-<section class="learning">
+<section class="learning-section">
 
 
     <div class="learning-container">
 
 
-        <div>
+        <div class="learning-intro reveal">
 
-            <span class="learning-small">
+            <span>
                 CURRENTLY LEARNING
             </span>
 
             <h2>
-                What's next?
+                What's next in my journey?
             </h2>
 
             <p>
 
-                I'm continuing to improve my
-                web development skills and exploring
-                new technologies.
+                I'm continuously improving my skills
+                and exploring technologies that will
+                help me build better digital products.
 
             </p>
+
+            <a href="#contact">
+                Let's connect →
+            </a>
 
         </div>
 
 
 
-        <div class="learning-list">
+        <div class="learning-grid">
 
 
-            <div class="learning-item">
+            <div class="learning-card reveal">
 
                 <span>
                     01
                 </span>
 
+                <div>
+                    ⚡
+                </div>
+
+                <h3>
+                    JavaScript
+                </h3>
+
                 <p>
-                    Responsive Web Design
+                    DOM, events and interactions.
                 </p>
 
             </div>
 
 
-            <div class="learning-item">
+            <div class="learning-card reveal">
 
                 <span>
                     02
                 </span>
 
+                <div>
+                    📱
+                </div>
+
+                <h3>
+                    Responsive Web
+                </h3>
+
                 <p>
-                    JavaScript Fundamentals
+                    Better mobile-first experiences.
                 </p>
 
             </div>
 
 
-            <div class="learning-item">
+            <div class="learning-card reveal">
 
                 <span>
                     03
                 </span>
 
+                <div>
+                    ✨
+                </div>
+
+                <h3>
+                    UI / UX
+                </h3>
+
                 <p>
-                    Database Design
+                    Designing clearer user interfaces.
                 </p>
 
             </div>
 
 
-            <div class="learning-item">
+            <div class="learning-card reveal">
 
                 <span>
                     04
                 </span>
 
+                <div>
+                    🗄️
+                </div>
+
+                <h3>
+                    Database Design
+                </h3>
+
                 <p>
-                    UI / UX Basics
+                    Better structured data systems.
                 </p>
 
             </div>
@@ -1043,114 +1952,282 @@
 
 
 
-<!-- ================= CONTACT ================= -->
+<!-- =========================
+     FAQ
+========================= -->
 
-<section class="contact" id="contact">
+<section class="section faq-section">
 
 
-    <div class="section-title">
+    <div class="section-heading reveal">
 
         <span>
-            CONTACT
+            FAQ
         </span>
 
         <h2>
-            Let's work together
+            A few things about me
         </h2>
 
         <p>
-
-            Feel free to contact me if you would
-            like to discuss a project, technology
-            or simply say hello.
-
+            Quick answers about my studies,
+            skills and future plans.
         </p>
 
     </div>
 
 
 
-    <div class="contact-container">
+    <div class="faq-container">
 
 
-        <div class="contact-info">
+        <div class="faq-item reveal">
 
+            <button class="faq-question">
+
+                <span>
+                    What am I currently studying?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    I am studying information systems while
+                    learning practical web development skills.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item reveal">
+
+            <button class="faq-question">
+
+                <span>
+                    What technologies do I use?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    I currently work with HTML, CSS,
+                    JavaScript, Git, GitHub, MySQL and MongoDB.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item reveal">
+
+            <button class="faq-question">
+
+                <span>
+                    What am I learning next?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    My next focus is improving JavaScript,
+                    responsive design and database development.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item reveal">
+
+            <button class="faq-question">
+
+                <span>
+                    Where can I see my projects?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    You can explore the project section above
+                    and connect with me through GitHub.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section contact" id="contact">
+
+
+    <div class="section-heading reveal">
+
+        <span>
+            CONTACT ME
+        </span>
+
+        <h2>
+            Let's build something
+        </h2>
+
+        <p>
+            Feel free to contact me to discuss
+            ideas, projects or learning opportunities.
+        </p>
+
+    </div>
+
+
+
+    <div class="contact-layout">
+
+
+        <div class="contact-information reveal">
+
+            <span class="contact-label">
+                GET IN TOUCH
+            </span>
 
             <h3>
-                Get in touch
+                Have an idea or just want to say hello?
             </h3>
 
             <p>
 
                 I'm always interested in learning,
-                building projects and connecting
-                with other people interested in technology.
+                meeting people in technology and
+                working on new projects.
 
             </p>
 
 
 
-            <div class="contact-item">
+            <div class="contact-list">
 
-                <div>
-                    📧
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📧
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Email
+                        </span>
+
+                        <strong>
+                            your-email@gmail.com
+                        </strong>
+
+                    </div>
+
                 </div>
 
-                <div>
 
-                    <span>
-                        Email
-                    </span>
 
-                    <p>
-                        your-email@gmail.com
-                    </p>
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Location
+                        </span>
+
+                        <strong>
+                            Vietnam
+                        </strong>
+
+                    </div>
 
                 </div>
+
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        💬
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Status
+                        </span>
+
+                        <strong>
+                            Open to learning opportunities
+                        </strong>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
 
+            <div class="contact-social">
 
-            <div class="contact-item">
+                <a href="#">
+                    GitHub
+                </a>
 
-                <div>
-                    📍
-                </div>
+                <a href="#">
+                    LinkedIn
+                </a>
 
-                <div>
-
-                    <span>
-                        Location
-                    </span>
-
-                    <p>
-                        Vietnam
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="contact-item">
-
-                <div>
-                    💬
-                </div>
-
-                <div>
-
-                    <span>
-                        Availability
-                    </span>
-
-                    <p>
-                        Open to learning opportunities
-                    </p>
-
-                </div>
+                <a href="#">
+                    Instagram
+                </a>
 
             </div>
 
@@ -1159,35 +2236,42 @@
 
 
 
-        <form class="contact-form">
+        <form
+            class="contact-form reveal"
+            id="contactForm"
+        >
 
 
             <div class="form-row">
 
 
-                <div>
+                <div class="form-group">
 
-                    <label>
+                    <label for="name">
                         Your Name
                     </label>
 
                     <input
+                        id="name"
                         type="text"
                         placeholder="Enter your name"
+                        required
                     >
 
                 </div>
 
 
-                <div>
+                <div class="form-group">
 
-                    <label>
-                        Your Email
+                    <label for="email">
+                        Email Address
                     </label>
 
                     <input
+                        id="email"
                         type="email"
                         placeholder="Enter your email"
+                        required
                     >
 
                 </div>
@@ -1197,35 +2281,54 @@
 
 
 
-            <label>
-                Subject
-            </label>
+            <div class="form-group">
+
+                <label for="subject">
+                    Subject
+                </label>
+
+                <input
+                    id="subject"
+                    type="text"
+                    placeholder="What is this about?"
+                    required
+                >
+
+            </div>
 
 
-            <input
-                type="text"
-                placeholder="Enter subject"
+
+            <div class="form-group">
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                class="form-button"
             >
 
-
-
-            <label>
-                Message
-            </label>
-
-
-            <textarea
-                rows="6"
-                placeholder="Write your message..."
-            ></textarea>
-
-
-
-            <button type="submit">
-
-                Send Message →
+                Send Message
+                <span>
+                    →
+                </span>
 
             </button>
+
+
+            <p class="form-status" id="formStatus"></p>
 
 
         </form>
@@ -1238,17 +2341,22 @@
 
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================
+     FOOTER
+========================= -->
 
-<footer>
+<footer class="footer">
 
 
-    <div class="footer-container">
+    <div class="footer-main">
 
 
         <div>
 
-            <a href="#home" class="footer-logo">
+            <a
+                href="#home"
+                class="footer-logo"
+            >
                 BN<span>.</span>
             </a>
 
@@ -1261,7 +2369,7 @@
 
 
 
-        <div class="footer-links">
+        <div class="footer-navigation">
 
             <a href="#home">
                 Home
@@ -1273,6 +2381,10 @@
 
             <a href="#skills">
                 Skills
+            </a>
+
+            <a href="#journey">
+                Journey
             </a>
 
             <a href="#projects">
@@ -1293,7 +2405,13 @@
     <div class="footer-bottom">
 
         <p>
-            © 2026 Đinh Nhật Bảo Nhi. Built with HTML & CSS.
+            © 2026 Đinh Nhật Bảo Nhi.
+            Built with HTML, CSS & JavaScript.
+        </p>
+
+
+        <p>
+            Designed with curiosity ✨
         </p>
 
     </div>
@@ -1301,6 +2419,20 @@
 
 </footer>
 
+
+
+<!-- BACK TO TOP -->
+
+<button
+    id="backToTop"
+    class="back-to-top"
+    aria-label="Back to top"
+>
+    ↑
+</button>
+
+
+<script src="script.js"></script>
 
 </body>
 
